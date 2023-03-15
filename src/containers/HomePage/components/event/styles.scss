@@ -1,0 +1,38 @@
+@import "../../../../styles/variables.scss";
+
+.event {
+  &-wrapper {
+    display: flex;
+  }
+
+  &-item {
+    flex: 0 0 50%;
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-left: solid 1px $theme-color;
+
+    &:first-child {
+      text-align: end;
+      border-left: none;
+      border-right: solid 1px $theme-color;
+    }
+  }
+
+  &-image {
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  &-heading {
+    font-size: 20px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  &-content {
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 10px;
+  }
+}
