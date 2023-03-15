@@ -38,19 +38,18 @@
     flex: 0 0 calc((100% / 3) - 40px);
     text-align: center;
     background-color: #0000003d;
-    width: 0;
-    margin: 0;
+    margin: 20px;
     overflow: hidden;
     transition: width 0.5s ease;
+    width: calc((100% / 3) - 40px);
+    display: none;
 
     &.no-active-type {
-      width: calc((100% / 3) - 40px);
-      margin: 20px;
+      display: block;
     }
 
     &.active {
-      width: calc((100% / 3) - 40px);
-      margin: 20px;
+      display: block;
     }
   }
 

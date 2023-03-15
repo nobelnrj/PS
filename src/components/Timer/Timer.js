@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 import "./styles.scss";
 
-const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth }) => {
+const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
 
-  let milliseconds = seconds * 1000;
   let radius = size / 2;
   let circumference = size * Math.PI;
 
@@ -21,7 +20,7 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth }) => {
       var now = new Date().getTime();
 
       // Find the distance between now and the count down date
-      var distance = new Date("2023-04-23") - now;
+      var distance = new Date(endDate) - now;
 
       // Time calculations for days, hours, minutes and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -45,6 +44,7 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth }) => {
 
     return () => {
       console.log(`clearing interval`);
+      setIsPlaying(false);
       clearInterval(interval);
     };
   }, []);
@@ -212,7 +212,8 @@ Timer.propTypes = {
   size: PropTypes.number.isRequired,
   strokeBgColor: PropTypes.string.isRequired,
   strokeColor: PropTypes.string.isRequired,
-  strokeWidth: PropTypes.number.isRequired
+  strokeWidth: PropTypes.number.isRequired,
+  endDate: PropTypes.string.isRequired
 };
 
 export default Timer;

@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from "react-slick";
 import SectionHeaders from '../../../../components/SectionHeaders/SectionHeaders';
+import PropTypes from 'prop-types';
 
 // Import css files for slick slider
 import "slick-carousel/slick/slick.css";
@@ -25,8 +26,8 @@ const Gallery = ({ config }) => {
       <Slider {...settings}>
         {
           config.items.map((data, index) => (
-            <div className='slick-content'>
-              <img src={data.image} alt="" srcset="" />
+            <div key={index} className='slick-content'>
+              <img src={data.image} alt="" />
             </div>
           ))
         }
@@ -34,5 +35,9 @@ const Gallery = ({ config }) => {
     </div>
   );
 }
+
+Gallery.propTypes = {
+  config: PropTypes.object.isRequired
+};
 
 export default Gallery;

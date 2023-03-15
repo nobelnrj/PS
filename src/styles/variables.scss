@@ -1,4 +1,4 @@
-$theme-color: #f5e65e;
+$theme-color: #189AB4;
 $header-color: #121212;
 $brand-color: #ffaf53;
 $text-color: #000;
@@ -8,3 +8,7 @@ $overlay-color: #00000076;
 
 $white: #fff;
 $black: #000;
+
+:export {
+  themeColor: $theme-color;
+}
