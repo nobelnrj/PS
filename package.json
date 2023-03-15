@@ -2,11 +2,14 @@
   "name": "react-slingshot",
   "version": "7.0.1",
   "description": "Starter kit for creating apps with React and Redux",
+  "homepage": "https://nobelnrj.github.io/PS/",
   "engines": {
     "node": ">=8",
     "npm": ">=3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preinstall": "node tools/nodeVersionCheck.js",
     "setup": "node tools/setup/setupMessage.js && npm install && node tools/setup/setup.js",
     "remove-demo": "babel-node tools/removeDemo.js",
@@ -76,6 +79,7 @@
     "eslint-plugin-react": "7.16.0",
     "eslint-watch": "6.0.1",
     "file-loader": "4.2.0",
+    "gh-pages": "^5.0.0",
     "hard-source-webpack-plugin": "0.13.1",
     "history": "4.10.1",
     "html-webpack-plugin": "3.2.0",

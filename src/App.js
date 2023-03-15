@@ -1,7 +1,6 @@
 /* eslint-disable import/no-named-as-default */
 import { Route, Switch } from "react-router-dom";
 
-import Header from "./components/Header/Header";
 import HomePage from "./containers/HomePage/HomePage";
 import NotFoundPage from "./NotFoundPage";
 import PropTypes from "prop-types";
@@ -15,7 +14,7 @@ import { hot } from "react-hot-loader";
 function App() {
   return (
     <div className="app">
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route component={NotFoundPage} />
