@@ -2,6 +2,26 @@ import bannerImage from "../static/image/banner.jpg";
 import aboutGroomImage from "../static/image/about-1.jpg";
 import aboutBrideImage from "../static/image/about-2.jpg";
 import firstStoryImage from "../static/image/couple-1.jpg";
+import img1 from "../static/image/1.jpg";
+import img2 from "../static/image/2.jpg";
+import img3 from "../static/image/3.jpg";
+import img4 from "../static/image/4.jpg";
+import img5 from "../static/image/5.jpg";
+import img6 from "../static/image/6.jpg";
+import img7 from "../static/image/7.jpg";
+import img8 from "../static/image/8.jpg";
+import img9 from "../static/image/9.jpg";
+import proposalImg from "../static/image/proposalImg.jpg";
+import graduateImg from "../static/image/graduate.jpg";
+import fBlendImg from "../static/image/fBlend.jpg";
+import ring from "../static/image/ring.jpg";
+import receptionImg from "../static/image/reception.jpg";
+import weddingImg from "../static/image/wedding.jpg";
+import subhaImg from "../static/image/subha.jpg";
+import sughaImg from "../static/image/sugha.jpg";
+import vishwaImg from "../static/image/vishwa.jpg";
+import nobelImg from "../static/image/nobel.jpg";
+
 
 const homepageConfig = {
   banner: {
@@ -12,7 +32,8 @@ const homepageConfig = {
     items: [
       {
         heading: "The Groom",
-        content: "Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.",
+        content: ` I am Praveen Kumar, a software developer, and I'm thrilled to be marrying the love of my life. As I look forward to this exciting new chapter in my life, I want to share a bit about myself with all of you.
+          I was born and raised in Chennai, where I developed a deep passion for software development. After completing my education, I pursued my dream of becoming a software developer and have been fortunate to have a fulfilling career in the field.`,
         name: "Praveen",
         twitterLink: "",
         facebookLink: "",
@@ -22,7 +43,11 @@ const homepageConfig = {
       },
       {
         heading: "The Bride",
-        content: "Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.",
+        content: `
+          I am Supraja, and I am delighted to be sharing my love story with you all. Some of you may know me from our undergraduate years when we shared classes, projects, and memories. It was during that time that I met my soulmate, Praveen Kumar, and since then, we have been inseparable.
+          I am excited to announce that we will be tying the knot soon, and I couldn't be more thrilled to start this new chapter in my life. Ever since we started dating in October 2015, my love for Praveen has only grown stronger with each passing day. He is my rock, my best friend, and the love of my life.
+          We share many common interests, including our love for travel, food, and trying new experiences. But more than that, we share a deep connection and a commitment to building a life together filled with love, laughter, and joy.
+          `,
         name: "Supraja",
         twitterLink: "",
         facebookLink: "",
@@ -35,76 +60,123 @@ const homepageConfig = {
   story: {
     items: [
       {
-        heading: "First We Meet 1",
-        date: "2015-05-25",
-        content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-        image: firstStoryImage
+        heading: "Start of a journey",
+        date: "2015-10-18",
+        content: `
+        With my heart racing and my palms sweaty, 
+        I summoned up the courage to ask Supraja to be my better half. 
+        As I called her she listened with anticipation, 
+        and when I asked her to be a part of my future, she responded with a resounding "Yes!".
+        `,
+        image: proposalImg
       },
       {
-        heading: "First We Meet 2",
-        date: "2015-05-28",
-        content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-        image: firstStoryImage
+        heading: "We Graduated",
+        date: "2020-02-29",
+        content: `
+        On this special day, Praveen and Supraja graduated with a B-Tech degree in Information Technology. 
+        During our time at college, we not only gained knowledge and skills, but we also grew our relationship. 
+        Our shared interest in technology and passion for learning brought us closer together. 
+        Graduating on the same day made the occasion even more special, marking the end of our academic journey together. 
+        We are excited to start the next chapter of our lives together as a married couple. 
+        `,
+        image: graduateImg
       },
       {
-        heading: "First We Meet 3",
-        date: "2015-05-30",
-        content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-        image: firstStoryImage
+        heading: "Families blend together",
+        date: "2023-01-23",
+        content: `
+        On a beautiful day, our families finally had the chance to meet each other. 
+        Praveen and Supraja were thrilled to introduce their families to each other. 
+        It was a joyous occasion, and everyone quickly took a liking to each other. 
+        We shared stories, laughter, and delicious food, 
+        and it was clear that both families were meant to be united. 
+        Our families' acceptance of our love for each other meant the world to us, 
+        and we are grateful for their love and support. 
+        We are excited to celebrate our special day with them by our side.
+        `,
+        image: fBlendImg
       },
       {
-        heading: "First We Meet 4",
-        date: "2015-06-10",
-        content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-        image: firstStoryImage
+        heading: "Finally Engaged",
+        date: "2023-02-12",
+        content: `
+        On a fine Sunday afternoon, Praveen and Supraja got engaged in front of both their families and friends. 
+        It was a special day that they will always cherish. 
+        Praveen proposed with a beautiful ring, and Supraja said "yes" with tears of joy in her eyes. 
+        The event was made even more memorable by the presence of our loved ones. 
+        We are grateful for their love and support, and we are excited to continue our journey together as we prepare for our wedding day.
+        `,
+        image: ring
       }
     ]
   },
   gallery: {
     items: [
       {
-        image: aboutGroomImage
+        image: img1
       },
       {
-        image: aboutGroomImage
+        image: img2
       },
       {
-        image: aboutGroomImage
+        image: img3
       },
       {
-        image: aboutGroomImage
+        image: img4
       },
       {
-        image: aboutGroomImage
+        image: img5
       },
       {
-        image: aboutGroomImage
+        image: img6
+      },
+      {
+        image: img7
+      },
+      ,{
+        image: img8
+      },
+      {
+        image: img9
       }
     ]
   },
   event: {
     items: [
       {
-        heading: "The Reception",
-        content: "123 Street, New York, USA",
-        image: aboutGroomImage,
-        timing: "12:00AM - 13:00PM"
+        heading: "The Pre-wedding Party",
+        content: "Tirupati Mahal, East mada Street, Madambakkam, Chennai, Tamil Nadu 600126",
+        image: receptionImg,
+        timing: "06:30PM"
       },
       {
-        heading: "Wedding Party",
-        content: "123 Street, New York, USA",
-        image: aboutGroomImage,
-        timing: "12:00AM - 13:00PM"
+        heading: "Wedding Event",
+        content: "Tirupati Mahal, East mada Street, Madambakkam, Chennai, Tamil Nadu 600126",
+        image: weddingImg,
+        timing: "07:30 AM"
       }
     ]
   },
   credits: {
     members: [
       {
-        name: "Full Name",
-        tag: "Best Friend",
+        name: "Sughashini",
+        tag: "sisters",
         type: "Groomsmen",
-        image: aboutGroomImage
+        image: sughaImg
+      },
+      {
+        name: "Subhaashini",
+        tag: "sisters",
+        type: "Groomsmen",
+        image: subhaImg
+      },
+      {
+        name: "Vishwa",
+        tag: "Brother",
+        type: "Bridesmaid",
+        image: vishwaImg
       },
       {
         name: "Full Name",
@@ -113,22 +185,10 @@ const homepageConfig = {
         image: aboutBrideImage
       },
       {
-        name: "Full Name",
-        tag: "Best Friend",
+        name: "Nobel",
+        tag: "Friend & This website developer",
         type: "Groomsmen",
-        image: aboutGroomImage
-      },
-      {
-        name: "Full Name",
-        tag: "Best Friend",
-        type: "Bridesmaid",
-        image: aboutBrideImage
-      },
-      {
-        name: "Full Name",
-        tag: "Best Friend",
-        type: "Groomsmen",
-        image: aboutGroomImage
+        image: nobelImg
       },
       {
         name: "Full Name",
