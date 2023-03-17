@@ -23,7 +23,7 @@ const Banner = ({ config }) => {
               strokeBgColor="black"
               strokeColor={variables.themeColor}
               strokeWidth={2}
-              endDate="2023-04-22"
+              endDate="2023-04-23"
             />
           </p>
         </div>
