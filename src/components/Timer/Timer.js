@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import Image from 'next/image'
 
-import "./styles.scss";
+// import "../../../styles/Timer.scss";
+
+import styles from "@/styles/components/Timer.module.scss";
 
 const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
 
@@ -47,7 +50,7 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
       setIsPlaying(false);
       clearInterval(interval);
     };
-  }, []);
+  }, [endDate]);
 
   // const updateTime = () => {
   //   // setIsPlaying(true);
@@ -66,16 +69,16 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
   };
 
   return (
-    <div className='timer'>
+    <div className={styles.timer}>
       <div
-        className='timer-container'
+        className={styles.timerContainer}
         style={Object.assign(
           {},
           countdownSizeStyles
         )}
       >
         <p style={textStyles}>{days}D</p>
-        <svg className='timer-svg'>
+        <svg className={styles.timerSvg}>
           <circle
             cx={radius}
             cy={radius}
@@ -85,7 +88,7 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
             strokeWidth={strokeWidth}
           ></circle>
         </svg>
-        <svg className='timer-svg'>
+        <svg className={styles.timerSvg}>
           <circle
             strokeDasharray={circumference}
             // strokeDashoffset={
@@ -102,14 +105,14 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
         </svg>
       </div>
       <div
-        className='timer-container'
+        className={styles.timerContainer}
         style={Object.assign(
           {},
           countdownSizeStyles
         )}
       >
         <p style={textStyles}>{hours}h</p>
-        <svg className='timer-svg'>
+        <svg className={styles.timerSvg}>
           <circle
             cx={radius}
             cy={radius}
@@ -119,12 +122,12 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
             strokeWidth={strokeWidth}
           ></circle>
         </svg>
-        <svg className='timer-svg'>
+        <svg className={styles.timerSvg}>
           <circle
             strokeDasharray={circumference}
-            strokeDashoffset={
-              isPlaying ? circumference - (hours / 24) * circumference : 0
-            }
+            // strokeDashoffset={
+            //   isPlaying ? circumference - (hours / 24) * circumference : 0
+            // }
             r={radius}
             cx={radius}
             cy={radius}
@@ -136,14 +139,14 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
         </svg>
       </div>
       <div
-        className='timer-container'
+        className={styles.timerContainer}
         style={Object.assign(
           {},
           countdownSizeStyles
         )}
       >
         <p style={textStyles}>{minutes}m</p>
-        <svg className='timer-svg'>
+        <svg className={styles.timerSvg}>
           <circle
             cx={radius}
             cy={radius}
@@ -153,12 +156,12 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
             strokeWidth={strokeWidth}
           ></circle>
         </svg>
-        <svg className='timer-svg'>
+        <svg className={styles.timerSvg}>
           <circle
             strokeDasharray={circumference}
-            strokeDashoffset={
-              isPlaying ? circumference - (minutes / 60) * circumference : 0
-            }
+            // strokeDashoffset={
+            //   isPlaying ? circumference - (minutes / 60) * circumference : 0
+            // }
             r={radius}
             cx={radius}
             cy={radius}
@@ -170,14 +173,14 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
         </svg>
       </div>
       <div
-        className='timer-container'
+        className={styles.timerContainer}
         style={Object.assign(
           {},
           countdownSizeStyles
         )}
       >
         <p style={textStyles}>{seconds}s</p>
-        <svg className='timer-svg'>
+        <svg className={styles.timerSvg}>
           <circle
             cx={radius}
             cy={radius}
@@ -187,12 +190,12 @@ const Timer = ({ size, strokeBgColor, strokeColor, strokeWidth, endDate }) => {
             strokeWidth={strokeWidth}
           ></circle>
         </svg>
-        <svg className='timer-svg'>
+        <svg className={styles.timerSvg}>
           <circle
             strokeDasharray={circumference}
-            strokeDashoffset={
-              isPlaying ? circumference - (seconds / 60) * circumference : 0
-            }
+            // strokeDashoffset={
+            //   isPlaying ? circumference - (seconds / 60) * circumference : 0
+            // }
             r={radius}
             cx={radius}
             cy={radius}

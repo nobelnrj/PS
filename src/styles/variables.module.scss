@@ -1,0 +1,17 @@
+$theme-color: #819bf1;
+$header-color: #121212;
+$brand-color: #ffaf53;
+$text-color: #000;
+$overlay-color: #00000076;
+
+// base colors:
+$white: #fff;
+$black: #000;
+
+// breakpoints
+$tablet: 840px;
+$phone: 500px;
+
+:export {
+  themeColor: $theme-color;
+}

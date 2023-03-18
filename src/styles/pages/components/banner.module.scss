@@ -1,0 +1,53 @@
+@import '../../variables.module.scss';
+@import '../../mixin.module.scss';
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  &Img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+    @include bp(tablet) {
+      object-position: -785px;
+    }
+  }
+
+  &Wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &Content {
+    width: 50%;
+    min-width: 500px;
+    color: #fff;
+    text-align: center;
+  }
+
+  &Heading {
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 25px;
+  }
+
+  &Event {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+}

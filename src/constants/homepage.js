@@ -1,31 +1,31 @@
-import bannerImage from "../static/image/banner.jpg";
-import aboutGroomImage from "../static/image/about-1.jpg";
-import aboutBrideImage from "../static/image/about-2.jpg";
-import firstStoryImage from "../static/image/couple-1.jpg";
-import img1 from "../static/image/1.jpg";
-import img2 from "../static/image/2.jpg";
-import img3 from "../static/image/3.jpg";
-import img4 from "../static/image/4.jpg";
-import img5 from "../static/image/5.jpg";
-import img6 from "../static/image/6.jpg";
-import img7 from "../static/image/7.jpg";
-import img8 from "../static/image/8.jpg";
-import img9 from "../static/image/9.jpg";
-import proposalImg from "../static/image/proposalImg.jpg";
-import graduateImg from "../static/image/graduate.jpg";
-import fBlendImg from "../static/image/fBlend.jpg";
-import ring from "../static/image/ring.jpg";
-import receptionImg from "../static/image/reception.jpg";
-import weddingImg from "../static/image/wedding.jpg";
-import subhaImg from "../static/image/subha.jpg";
-import sughaImg from "../static/image/sugha.jpg";
-import vishwaImg from "../static/image/vishwa.jpg";
-import nobelImg from "../static/image/nobel.jpg";
+// import bannerImage from "../static/image/banner.jpg";
+// import aboutGroomImage from "./static/image/about-1.jpg";
+// import aboutBrideImage from "../static/image/about-2.jpg";
+// import firstStoryImage from "../static/image/couple-1.jpg";
+// import img1 from "../static/image/1.jpg";
+// import img2 from "../static/image/2.jpg";
+// import img3 from "../static/image/3.jpg";
+// import img4 from "../static/image/4.jpg";
+// import img5 from "../static/image/5.jpg";
+// import img6 from "../static/image/6.jpg";
+// import img7 from "../static/image/7.jpg";
+// import img8 from "../static/image/8.jpg";
+// import img9 from "../static/image/9.jpg";
+// import proposalImg from "../static/image/proposalImg.jpg";
+// import graduateImg from "../static/image/graduate.jpg";
+// import fBlendImg from "../static/image/fBlend.jpg";
+// import ring from "../static/image/ring.jpg";
+// import receptionImg from "../static/image/reception.jpg";
+// import weddingImg from "../static/image/wedding.jpg";
+// import subhaImg from "../static/image/subha.jpg";
+// import sughaImg from "../static/image/sugha.jpg";
+// import vishwaImg from "../static/image/vishwa.jpg";
+// import nobelImg from "../static/image/nobel.jpg";
 
 
 const homepageConfig = {
   banner: {
-    bannerImage: bannerImage,
+    bannerImage: "/static/image/banner.jpg",
     bannerEvent: "We are getting married"
   },
   about: {
@@ -39,7 +39,7 @@ const homepageConfig = {
         facebookLink: "",
         instaLink: "",
         linkdenInLink: "",
-        image: aboutGroomImage
+        image: "/static/image/about-1.jpg"
       },
       {
         heading: "The Bride",
@@ -53,7 +53,7 @@ const homepageConfig = {
         facebookLink: "",
         instaLink: "",
         linkdenInLink: "",
-        image: aboutBrideImage
+        image: "/static/image/about-2.jpg"
       }
     ]
   },
@@ -68,7 +68,7 @@ const homepageConfig = {
         As I called her she listened with anticipation, 
         and when I asked her to be a part of my future, she responded with a resounding "Yes!".
         `,
-        image: proposalImg
+        image: "/static/image/proposalImg.jpg"
       },
       {
         heading: "We Graduated",
@@ -80,7 +80,7 @@ const homepageConfig = {
         Graduating on the same day made the occasion even more special, marking the end of our academic journey together. 
         We are excited to start the next chapter of our lives together as a married couple. 
         `,
-        image: graduateImg
+        image: "/static/image/graduate.jpg"
       },
       {
         heading: "Families blend together",
@@ -95,7 +95,7 @@ const homepageConfig = {
         and we are grateful for their love and support. 
         We are excited to celebrate our special day with them by our side.
         `,
-        image: fBlendImg
+        image: "/static/image/fBlend.jpg"
       },
       {
         heading: "Finally Engaged",
@@ -107,38 +107,38 @@ const homepageConfig = {
         The event was made even more memorable by the presence of our loved ones. 
         We are grateful for their love and support, and we are excited to continue our journey together as we prepare for our wedding day.
         `,
-        image: ring
+        image: "/static/image/ring.jpg"
       }
     ]
   },
   gallery: {
     items: [
       {
-        image: img1
+        image: "/static/image/1.jpg"
       },
       {
-        image: img2
+        image: "/static/image/2.jpg"
       },
       {
-        image: img3
+        image: "/static/image/3.jpg"
       },
       {
-        image: img4
+        image: "/static/image/4.jpg"
       },
       {
-        image: img5
+        image: "/static/image/5.jpg"
       },
       {
-        image: img6
+        image: "/static/image/6.jpg"
       },
       {
-        image: img7
+        image: "/static/image/7.jpg"
       },
-      ,{
-        image: img8
+      , {
+        image: "/static/image/8.jpg"
       },
       {
-        image: img9
+        image: "/static/image/9.jpg"
       }
     ]
   },
@@ -147,13 +147,13 @@ const homepageConfig = {
       {
         heading: "The Pre-wedding Party",
         content: "Tirupati Mahal, East mada Street, Madambakkam, Chennai, Tamil Nadu 600126",
-        image: receptionImg,
+        image: "/static/image/reception.jpg",
         timing: "06:30PM"
       },
       {
         heading: "Wedding Event",
         content: "Tirupati Mahal, East mada Street, Madambakkam, Chennai, Tamil Nadu 600126",
-        image: weddingImg,
+        image: "/static/image/wedding.jpg",
         timing: "07:30 AM"
       }
     ]
@@ -164,37 +164,37 @@ const homepageConfig = {
         name: "Sughashini",
         tag: "sisters",
         type: "Groomsmen",
-        image: sughaImg
+        image: "/static/image/sugha.jpg"
       },
       {
         name: "Subhaashini",
         tag: "sisters",
         type: "Groomsmen",
-        image: subhaImg
+        image: "/static/image/subha.jpg"
       },
       {
         name: "Vishwa",
         tag: "Brother",
         type: "Bridesmaid",
-        image: vishwaImg
+        image: "/static/image/vishwa.jpg"
       },
       {
         name: "Full Name",
         tag: "Best Friend",
         type: "Bridesmaid",
-        image: aboutBrideImage
+        image: "/static/image/about-2.jpg"
       },
       {
         name: "Nobel",
         tag: "Friend & This website developer",
         type: "Groomsmen",
-        image: nobelImg
+        image: "/static/image/nobel.jpg"
       },
       {
         name: "Full Name",
         tag: "Best Friend",
         type: "Bridesmaid",
-        image: aboutBrideImage
+        image: "/static/image/about-2.jpg"
       }
     ]
   }

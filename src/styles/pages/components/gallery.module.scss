@@ -1,0 +1,13 @@
+.gallerySlide {
+  margin-bottom: 80px;
+
+  .slickContent {
+    img {
+      padding: 20px 0px 20px;
+      width: 90%;
+      margin: 0 auto;
+      height: 60vh;
+      object-fit: cover;
+    }
+  }
+}

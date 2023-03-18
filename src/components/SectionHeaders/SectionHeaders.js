@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Image from 'next/image'
 
-import "./styles.scss";
-import HeartSVG from "../../static/image/heart.png"
+// import "../../../styles/SectionHeaders.scss";
+// import HeartSVG from "../../static/image/heart.png"
+import styles from "@/styles/components/SectionHeaders.module.scss";
 
 const SectionHeaders = ({ subHeading, heading }) => {
   return (
-    <div className='sectionhead'>
-      <h5 className='sectionhead-subheading'>{subHeading}</h5>
-      <h2 className='sectionhead-heading'>{heading}</h2>
-      <div className='sectionhead-underline'>
-        <img src={HeartSVG} />
+    <div className={styles.sectionhead}>
+      <h5 className={styles.sectionheadSubheading}>{subHeading}</h5>
+      <h2 className={styles.sectionheadHeading}>{heading}</h2>
+      <div className={styles.sectionheadUnderline}>
+        <Image src="/static/image/heart.png" alt='' width={20} height={20} />
       </div>
     </div>
   );
